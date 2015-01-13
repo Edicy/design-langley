@@ -33,7 +33,7 @@
 <div class="blog-information">{{ article.author.name }} <span class="date">{{ article.created_at | format_date:"long" }}</span></div></div>
         
         <div id="content-inner">
-          <div class="blog" class="clearfix">
+          <div class="blog" class="clearfix" data-search-indexing-allowed="true">
            {% editable article.excerpt %}
               <div id="articlebody">
               {% editable article.body %}

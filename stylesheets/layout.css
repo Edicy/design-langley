@@ -155,6 +155,10 @@ h3 {
     top: 15px;
     font: normal 13px/16px Trebuchet, Arial, sans-serif;
   }
+
+  .voog-search-modal {
+    text-align: left;
+  }
   
   #mainmenu {
     margin: 0;
