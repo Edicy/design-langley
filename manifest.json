@@ -1,147 +1,147 @@
 {
-  "assets": [
-    {
-      "filename": "layout.css",
-      "file": "stylesheets/layout.css",
-      "kind": "stylesheets",
-      "content_type": "text/css"
-    },
-    {
-      "filename": "style.css",
-      "file": "stylesheets/style.css",
-      "kind": "stylesheets",
-      "content_type": "text/css"
-    },
-    {
-      "filename": "bigtext.gif",
-      "file": "images/bigtext.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "image.gif",
-      "file": "images/image.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "image1.gif",
-      "file": "images/image1.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "mainmenu.gif",
-      "file": "images/mainmenu.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "mainmenu_li.gif",
-      "file": "images/mainmenu_li.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "search.gif",
-      "file": "images/search.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "logo.gif",
-      "file": "images/logo.gif",
-      "kind": "images",
-      "content_type": "image/gif"
-    },
-    {
-      "filename": "submenu_li.png",
-      "file": "images/submenu_li.png",
-      "kind": "images",
-      "content_type": "image/png"
-    },
-    {
-      "filename": "mainmenu_li.png",
-      "file": "images/mainmenu_li.png",
-      "kind": "images",
-      "content_type": "image/png"
-    }
-  ],
+  "description": "Langley",
+  "name": "Langley",
   "preview_medium": "http://static.edicy.com/designs/previews/langley_medium.jpg",
+  "preview_small": "http://static.edicy.com/designs/previews/langley_small.jpg",
   "author": "Tajo Oja",
   "layouts": [
     {
-      "title": "Search",
-      "file": "components/search.tpl",
-      "layout_name": "",
-      "component": true,
-      "content_type": "component"
-    },
-    {
-      "title": "News",
-      "file": "components/news.tpl",
-      "layout_name": "",
-      "component": true,
-      "content_type": "component"
-    },
-    {
-      "title": "Mainmenu",
-      "file": "components/mainmenu.tpl",
-      "layout_name": "",
-      "component": true,
-      "content_type": "component"
-    },
-    {
-      "title": "Langmenu",
-      "file": "components/langmenu.tpl",
-      "layout_name": "",
-      "component": true,
-      "content_type": "component"
-    },
-    {
-      "title": "Front page",
+      "content_type": "page",
+      "component": false,
       "file": "layouts/front_page.tpl",
       "layout_name": "page_front",
-      "component": false,
-      "content_type": "page"
+      "title": "Front page"
     },
     {
-      "title": "Common page",
+      "content_type": "page",
+      "component": false,
       "file": "layouts/common_page.tpl",
       "layout_name": "page_default",
-      "component": false,
-      "content_type": "page"
+      "title": "Common page"
     },
     {
-      "title": "Blog & News",
+      "content_type": "blog",
+      "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "blog_front",
-      "component": false,
-      "content_type": "blog"
+      "title": "Blog & News"
     },
     {
-      "title": "Blog article",
+      "content_type": "blog_article",
+      "component": false,
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
-      "component": false,
-      "content_type": "blog_article"
+      "title": "Blog article"
     },
     {
-      "title": "SiteHeader",
-      "file": "components/siteheader.tpl",
-      "layout_name": "",
+      "content_type": "component",
       "component": true,
-      "content_type": "component"
+      "file": "components/langmenu.tpl",
+      "layout_name": "langmenu",
+      "title": "langmenu"
     },
     {
-      "title": "JS",
+      "content_type": "component",
+      "component": true,
       "file": "components/js.tpl",
-      "layout_name": "",
+      "layout_name": "js",
+      "title": "js"
+    },
+    {
+      "content_type": "component",
       "component": true,
-      "content_type": "component"
+      "file": "components/mainmenu.tpl",
+      "layout_name": "mainmenu",
+      "title": "mainmenu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/news.tpl",
+      "layout_name": "news",
+      "title": "news"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/siteheader.tpl",
+      "layout_name": "siteheader",
+      "title": "siteheader"
     }
   ],
-  "preview_small": "http://static.edicy.com/designs/previews/langley_small.jpg",
-  "name": "Langley",
-  "description": "Langley"
+  "assets": [
+    {
+      "content_type": "image/gif",
+      "file": "images/bigtext.gif",
+      "kind": "images",
+      "filename": "bigtext.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/image.gif",
+      "kind": "images",
+      "filename": "image.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/image1.gif",
+      "kind": "images",
+      "filename": "image1.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/logo.gif",
+      "kind": "images",
+      "filename": "logo.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/mainmenu.gif",
+      "kind": "images",
+      "filename": "mainmenu.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/mainmenu_li.gif",
+      "kind": "images",
+      "filename": "mainmenu_li.gif"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/mainmenu_li.png",
+      "kind": "images",
+      "filename": "mainmenu_li.png"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/search.gif",
+      "kind": "images",
+      "filename": "search.gif"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/submenu_li.png",
+      "kind": "images",
+      "filename": "submenu_li.png"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/layout.css",
+      "kind": "stylesheets",
+      "filename": "layout.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/style.css",
+      "kind": "stylesheets",
+      "filename": "style.css"
+    }
+  ]
 }
