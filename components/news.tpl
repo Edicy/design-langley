@@ -1,5 +1,5 @@
 {% for article in site.latest_1_articles %}
-<div class="colorbox">
+<div class="colorbox clearfix" >
             <table class="news">
               <tr>
                 <td class="first">{{ "latest_news" |lc }}</td>

@@ -32,7 +32,7 @@
         <div id="bigtext">{% editable article.title plain="true" %}
 <div class="blog-information">{{ article.author.name }} <span class="date">{{ article.created_at | format_date:"long" }}</span></div></div>
         
-        <div id="content-inner">
+        <div id="content-inner" class="clearfix">
           <div class="blog" class="clearfix" data-search-indexing-allowed="true">
            {% editable article.excerpt %}
               <div id="articlebody">
@@ -41,7 +41,7 @@
               </div>
           </div> <!-- //blog -->
           
-          {% unless article.new_record? %}<div class="colorbox"><a name="comments"></a>
+          {% unless article.new_record? %}<div class="colorbox clearfix"><a name="comments"></a>
           <span class="colortext">{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></span>
           </div> {% endunless %}
           

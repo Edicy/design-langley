@@ -31,7 +31,7 @@
         <div id="headerimg"></div>
         <div id="bigtext">{{ page.title }}</div>
         
-        <div id="content-inner">
+        <div id="content-inner" class="clearfix">
           {% addbutton class="add-article" %}
           {% for article in articles %}
           <div class="blog" class="clearfix">
