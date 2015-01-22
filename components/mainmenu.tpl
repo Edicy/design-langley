@@ -1,4 +1,4 @@
-<ul id="mainmenu" class="clearfix">
+  <ul id="mainmenu" class="clearfix">
   {% unless site.root_item.hidden? %}
     <li>
       <a href="{{ site.root_item.url }}"{% if site.root_item.current? %} class="active"{% endif %}>{{site.root_item.title}}</a>
