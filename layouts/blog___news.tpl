@@ -9,7 +9,7 @@
 
 <body>
 	
-	<div id="wrap">
+	<div id="wrap" class="content-hyphenate">
    
    {% include "Langmenu" %}
    
