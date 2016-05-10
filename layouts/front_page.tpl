@@ -7,35 +7,35 @@
 </head>
 
 <body>
-	
+
 	<div id="wrap" class="content-hyphenate">
-   
+
    {% include "Langmenu" %}
-   
+
    <div id="container">
-   
+
      <div id="sidebar">
        <div id="sitename" class="clearfix">{% if editmode %}{% editable site.header %}{%else%}<a href="{{ site.root_item.url }}">{% editable site.header %}</a>{% endif %}</div>
-       
+
        {% include "Search" %}
        {% include "Mainmenu" %}
-       
+
        <div id="sidetext" class="clearfix">
          {% content name="footer" xpage="true" %}
        </div> <!-- //sidetext -->
-       
+
      </div> <!-- //sidebar -->
-    
+
       <div id="content">
         <div id="headerimg"></div>
         <div id="bigtext" class="clearfix">{% content name="slogan" xpage="true" %}</div>
-        
+
         <div id="content-inner" class="clearfix">
           <div id="content-left"{% for article in site.latest_articles | limit:1 %} style="width: 323px;"{% endfor %} class="clearfix" data-search-indexing-allowed="true">
             {% content %}
             <div class="clearer"></div>
           </div> <!-- //content-left -->
-        
+
           <div id="content-right">
             {% for article in site.latest_articles limit:1 %}
             <div id="news">
@@ -52,15 +52,15 @@
             </div> <!-- //news -->
             {% endfor %}
           </div> <!-- //content-right -->
-          
+
           <div class="clearer"></div>
         </div> <!-- //content-inner -->
         <div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
       </div> <!-- //content -->
-      
-      
+
+
       <div class="clearer"></div>
-      
+
      </div> <!-- //container -->
   </div> <!-- //wrap -->
 {% unless editmode %}{{ site.analytics }}{% endunless %}
